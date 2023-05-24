@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Castoro+Titling&display=swap');
+body{
+    background-color: #404040;
+}
+main{
+    background-color: white;
+    margin: auto;
+    border-radius: 10px;
+    width: 600px;
+    padding: 10px;
+    box-shadow: 5px 5px 15px #122828c6;
+}
+h1,h2{
+    font-family: 'Castoro Titling', cursive;
+    color: #404040;
+}

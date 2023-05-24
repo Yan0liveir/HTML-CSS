@@ -1,0 +1,38 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+/*
+em HTML é id = CSS é #
+em HTML é class em CSS é .
+*/
+body{
+    background-color: #089630;
+    font-family: 'Open Sans', sans-serif;
+}
+h1{
+color: 078C52;
+} 
+h1#principal{
+    text-align: center;
+    background-color: #008000;
+    color: white;
+}
+h2{
+color: #182200;
+}
+.basico{
+    color: #2ff311;
+    font-weight: bolder;
+}
+.intermediario{
+    color: #fffb05;
+    font-weight: bolder;
+}
+.avancado{
+    color: red;
+    font-weight: bolder;
+}
+.destaque{
+background-color: #182200;
+}
