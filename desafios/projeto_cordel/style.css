@@ -55,17 +55,28 @@ section{
     padding-left: 50px;
     font-size: 4vw;
 }
+section p{
+    padding-bottom: 50px;
+}
 section.normal{
     background-color: white;
 }
 section.imagem{
-    background-color:rgba(0, 0, 0, 0.418);
     color: white;
+    box-shadow: inset 2px 1px 12px 0px rgba(0, 0, 0, 0.612);
+}
+#img__1{
+    background:rgba(0, 0, 0, 0.418) url(imagens/background001.jpg) center no-repeat fixed ;
+    background-size: cover;
+}
+#img__2{
+    background:rgba(0, 0, 0, 0.418) url(imagens/background002.jpg) center no-repeat fixed ;
+    background-size: cover;
 }
 section.imagem>p{
     display:inline-block;
-    padding: 5px;
     background-color: rgba(0, 0, 0, 0.432);
+    text-shadow: 1px 1px 1px black;
 }
 footer{
     color: white;
