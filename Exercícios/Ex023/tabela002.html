@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uso de tabelas grandes</title>
+    <style>
+        table{
+            font-family: Arial, Helvetica, sans-serif;
+            border: 1px solid black;
+            border-collapse: collapse;
+            width: 500px;
+            position: relative;
+        }
+        caption{
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color:rgba(0, 0, 255, 0.244); 
+        }
+        td,th{
+            border: 1px solid black;
+            padding: 10px; 
+        }
+        thead{
+            background-color: rgba(0, 0, 255, 0.466);
+        }
+        thead > tr > th{
+            position: sticky;
+            top: 0;
+            background-color: rgba(0, 0, 255, 0.466);
+        }
+        tfoot{
+            background-color: rgba(0, 0, 255, 0.466); ;
+        }
+        tbody > tr:nth-child(odd){
+            background-color:rgba(0, 0, 255, 0.244);
+        }
+        tbody > tr:nth-child(even){
+            background-color: rgb(255, 255, 255);
+        }
+        .numero{
+            text-align: right;
+        }
+        .porcento{
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+  <!--
+    Anatomia para tabelas grandes
+        TABLE
+            CAPTION
+            THED
+                TR,TD,TH
+            TBODY
+                TR,TD,TH
+            TFOOT
+                TR,TD,TH
+  -->
+
+<table>
+    <caption>População das unidades federativas</caption>
+    <thead>
+        <tr>
+            <th scope="col">Estado</th>
+            <th scope="col">População</th>
+            <th scope="col" style="width: 50px;">porcentagem</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>São Paulo</td>
+            <td class="numero">46 094  937</td>
+            <td class="porcento">22,2%</td>
+        </tr>
+        <tr>
+            <td>Minas Gerais</td>
+            <td class="numero">20 732 660</td>
+            <td class="porcento">10,0%</td>
+        </tr>
+        <tr>
+            <td>Rio de janeiro</td>
+            <td class="numero">16 615 526</td>
+            <td class="porcento">8,0%</td>
+        </tr>
+        <tr>
+            <td>Bahia</td>
+            <td class="numero">14 732 660</td>
+            <td class="porcento">7,1%</td>
+        </tr>
+        <tr>
+            <td>Paraná</td>
+            <td class="numero">11 832 660</td>
+            <td class="porcento">5,7%</td>
+        </tr>
+        <tr>
+            <td>Rio Grande do Sul</td>
+            <td class="numero">10 832 660</td>
+            <td class="porcento">4,7%</td>
+        </tr>
+        <tr>
+            <td>Minas Gerais</td>
+            <td class="numero">20 732 660</td>
+            <td class="porcento">10,0%</td>
+        </tr>
+        <tr>
+            <td>Rio de janeiro</td>
+            <td class="numero">16 615 526</td>
+            <td class="porcento">8,0%</td>
+        </tr>
+        <tr>
+            <td>Bahia</td>
+            <td class="numero">14 732 660</td>
+            <td class="porcento">7,1%</td>
+        </tr>
+        <tr>
+            <td>Paraná</td>
+            <td class="numero">11 832 660</td>
+            <td class="porcento">5,7%</td>
+        </tr>
+        <tr>
+            <td>Rio Grande do Sul</td>
+            <td class="numero">10 832 660</td>
+            <td class="porcento">4,7%</td>
+        </tr>
+        <tr>
+            <td>Minas Gerais</td>
+            <td class="numero">20 732 660</td>
+            <td class="porcento">10,0%</td>
+        </tr>
+        <tr>
+            <td>Rio de janeiro</td>
+            <td class="numero">16 615 526</td>
+            <td class="porcento">8,0%</td>
+        </tr>
+        <tr>
+            <td>Bahia</td>
+            <td class="numero">14 732 660</td>
+            <td class="porcento">7,1%</td>
+        </tr>
+        <tr>
+            <td>Paraná</td>
+            <td class="numero">11 832 660</td>
+            <td class="porcento">5,7%</td>
+        </tr>
+        <tr>
+            <td>Rio Grande do Sul</td>
+            <td class="numero">10 832 660</td>
+            <td class="porcento">4,7%</td>
+        </tr>
+        <tr>
+            <td>Minas Gerais</td>
+            <td class="numero">20 732 660</td>
+            <td class="porcento">10,0%</td>
+        </tr>
+        <tr>
+            <td>Rio de janeiro</td>
+            <td class="numero">16 615 526</td>
+            <td class="porcento">8,0%</td>
+        </tr>
+        <tr>
+            <td>Bahia</td>
+            <td class="numero">14 732 660</td>
+            <td class="porcento">7,1%</td>
+        </tr>
+        <tr>
+            <td>Paraná</td>
+            <td class="numero">11 832 660</td>
+            <td class="porcento">5,7%</td>
+        </tr>
+        <tr>
+            <td>Rio Grande do Sul</td>
+            <td class="numero">10 832 660</td>
+            <td class="porcento">4,7%</td>
+        </tr>
+        <tr>
+            <td>Minas Gerais</td>
+            <td class="numero">20 732 660</td>
+            <td class="porcento">10,0%</td>
+        </tr>
+        <tr>
+            <td>Rio de janeiro</td>
+            <td class="numero">16 615 526</td>
+            <td class="porcento">8,0%</td>
+        </tr>
+        <tr>
+            <td>Bahia</td>
+            <td class="numero">14 732 660</td>
+            <td class="porcento">7,1%</td>
+        </tr>
+        <tr>
+            <td>Paraná</td>
+            <td class="numero">11 832 660</td>
+            <td class="porcento">5,7%</td>
+        </tr>
+        <tr>
+            <td>Rio Grande do Sul</td>
+            <td class="numero">10 832 660</td>
+            <td class="porcento">4,7%</td>
+        </tr>
+        <tr>
+            <td>Minas Gerais</td>
+            <td class="numero">20 732 660</td>
+            <td class="porcento">10,0%</td>
+        </tr>
+        <tr>
+            <td>Rio de janeiro</td>
+            <td class="numero">16 615 526</td>
+            <td class="porcento">8,0%</td>
+        </tr>
+        <tr>
+            <td>Bahia</td>
+            <td class="numero">14 732 660</td>
+            <td class="porcento">7,1%</td>
+        </tr>
+        <tr>
+            <td>Paraná</td>
+            <td class="numero">11 832 660</td>
+            <td class="porcento">5,7%</td>
+        </tr>
+        <tr>
+            <td>Rio Grande do Sul</td>
+            <td class="numero">10 832 660</td>
+            <td class="porcento">4,7%</td>
+        </tr>
+    </tbody>
+    <tfoot>
+        <tr>
+           <th scope="row">Total de habitantes</th> 
+           <td class="numero">125 000 125</td>
+           <td class="porcento">50,8%</td>
+        </tr>
+    </tfoot>
+</table>
+</body>
+</html>
