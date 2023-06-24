@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <style>
+        .wrapper{
+            background-color: rgb(255, 255, 255);
+            display: grid;
+            /* grid-template-columns: repeat(3,minmax(50px,200px)); */
+            grid-template-columns: repeat(4, 1fr);
+            gap:1rem;
+            grid-auto-rows: 200px;
+            /* align-items:center ;
+            justify-items: center; */
+
+        }
+        .wrapper div{
+          padding: 1rem;
+          font-size: 1.5em;
+        }
+        .wrapper div:nth-child(1){
+            grid-column:1/-1 ;
+
+        }
+        /* .wrapper > div:nth-child(6){
+            align-self: center;
+            justify-self: center;
+        } */
+        div:nth-child(even){
+            background-color: aqua;
+        }
+        .wrapper> div:nth-child(odd){
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <!-- <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>10</div> -->
+    </div>
+</body>
+</html>

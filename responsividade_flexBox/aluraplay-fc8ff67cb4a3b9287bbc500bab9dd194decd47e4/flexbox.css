@@ -47,14 +47,87 @@
 .menu__lista li{
     margin-top: 3%;
 }
+.menu__itens{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+/* VIDEOS */
+.videos__item{
+    height: 303px;
+    width: 300px;
+    flex-grow: 1;
+}
+.videos__container{
+    display: flex;
+   flex-wrap: wrap;
+   gap: 10px;
+    
+}
 @media (min-width:834px) {
 
     /* CABEÇALHO */
+
     .cabecalho__pesquisar__item{
         display: block;
     }
+
+    /* MENU */
+
+    .menu__container{
+        top: 80px;
+        height: auto;
+        width: 82px;
+    }
+    .menu__lista{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+
     /* RODAPÉ */
     .rodape__container{
         justify-content: space-between;
+    }
+
+}
+@media (min-width:1440px){
+      
+    /* MENU */
+
+    .menu__container{
+        width: 247px;
+        overflow: scroll;
+    }
+    .menu__lista{
+        padding: 20px 17px 20px 15px;
+        gap: 15px;
+    }
+    .menu__itens{
+       flex-direction: row;
+       gap: 15px;
+       align-items: center;
+    }
+    .menu__lista:nth-child(2),
+    .menu__lista:nth-child(3),
+    .menu__lista:nth-child(4){
+        display: flex;
+    }
+    .menu__lista:nth-child(3){
+        flex-direction: column-reverse;
+    }
+    .jogos{
+        order: 3;
+    }
+    .filmes{
+        order:2;
+    }
+    .premium{
+        order: 1;
+    }
+    .maispaginas{
+        order: 4;
     }
 }
