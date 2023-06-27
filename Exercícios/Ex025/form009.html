@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <form action="" method="get">
+        <div>
+            <label for="vl1">Valor1</label>
+            <input type="range" name="vl1" id="vl1" max="30" oninput="soma_1.innerHTML = Number(vl1.value); soma.innerHTML = Number(vl1.value) + Number(vl2.value)">
+            <output id="soma_1">0</output>
+        </div>
+        <div>
+            <label for="vl2">Valor2:</label>
+            <input type="range" name="vl2" id="vl2" max="30" oninput="valor_2.innerHTML = Number(vl2.value); soma.innerHTML = Number(vl1.value) + Number(vl2.value)" >
+            <output id="valor_2">0</output>
+        </div>
+        <div>
+            <label for="soma">Soma</label>
+            <output id="soma">0</output>
+        </div>
+        <div>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Apagar">
+        </div>
+    </form>
+</body>
+</html>

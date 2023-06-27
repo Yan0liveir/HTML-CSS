@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        fieldset{
+            display: flex;
+            flex-direction: column;
+        }
+    </style>
+</head>
+<body>
+    <form action="" method="get" autocomplete="on">
+        <fieldset>
+            <legend>sexo</legend>
+            <div>
+                <input type="radio" name="sexo" id="masculino"><label for="masculono">Masculino</label>
+            </div>
+            <div>
+                <input type="radio" name="sexo" id="feminino"><label for="feminino">Feminino</label>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Esportes favoritos</legend>
+            <div>
+                <input type="checkbox" name="espfut" id="espfut"><label for="espfut">Futebol</label>
+            <div>
+            <div>
+                <input type="checkbox" name="espnat" id="espnat"><label for="espnat">Natação</label>
+            </div>
+            <div>
+                <input type="checkbox" name="espvo" id="espvo"><label for="espvo">Vôlei</label>
+            </div>
+            <div>
+                <input type="checkbox" name="espbas" id="espbas"><label for="espbas">Basquete</label>
+            </div>
+            <div>
+                <input type="checkbox" name="esphand" id="esphand"><label for="esphand">Handbol</label>
+            </div>
+        </fieldset>
+        <div>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </div>
+
+    </form>
+</body>
+</html>
