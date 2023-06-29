@@ -7,6 +7,10 @@
     <style>
         .container{
             display:grid;
+            grid-template-columns:[size-start] 1fr[content-start] repeat(5,1fr) [size-end];
+            grid-template-rows: [size-top]170px [size-midle]170px 170px[size-bottom];
+            gap:10px;
+            font-size: 1.4em;
         }
         div :nth-child(odd){
             background-color: aqua;
@@ -14,13 +18,22 @@
         div :nth-child(even){
             background-color: blue;
         }
+        header,footer{
+            grid-column:size;
+        }
+        main{
+            grid-column: content;
+        }
+        aside{
+            grid-row:size-midle;
+        }
     </style>
 </head>
 <body>
     <div class="container">
         <header>Header</header>
-        <aside>Aside</aside>
         <main>Main</main>
+        <aside>Aside</aside>
         <footer>Footer</footer>
     </div>
 </body>

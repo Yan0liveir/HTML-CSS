@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <style>
+        @media (min-width:48em){
+            .l-wrapper{
+                display: grid;
+                grid-auto-rows: 1fr;
+                gap:.5rem;
+                height: 100vh;
+                grid-template-columns: [full-start] 1fr [container-start] repeat(6,1fr) [container-end] 1fr [full-end];
+            }
+            .l-wrapper > *{
+                padding: 1rem;
+                margin: 0.5rem 0;
+            }
+        }
+        .l-wrapper{
+                display: grid;
+                grid-auto-rows: 1fr;
+                gap:.5rem;
+                height: 100vh;
+        }
+        .l-header{
+            background-color: blue;
+        }
+        .l-hero{
+            background-color: aqua;
+        }
+        .l-main-content{
+            background-color: aquamarine;
+        }
+        .l-aside{
+            background-color: blueviolet;
+        }
+        .l-footer{
+            background-color: chocolate;
+        }
+    </style>
+</head>
+<body>
+    <main class="l-wrapper">
+        <header class="l-header"></header>
+        
+        <div class="l-hero"></div>
+
+        <main class="l-main-content"></main>
+
+        <aside class="l-aside"></aside>
+
+        <footer class="l-footer"></footer>
+    </main>
+</body>
+</html>

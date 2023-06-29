@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>grid</title>
+    <style>
+        div{
+            gap:.5em;
+            height: 100vh;
+            margin: auto;
+            max-width: 1200px;
+            display: grid;
+            grid-template-columns: repeat(6,1fr);
+            grid-template-rows: repeat(6,100px);
+            grid-template-rows: 100px 300px 155px 100px;
+         }
+        header{
+            background-color: skyblue;
+            grid-column: 1/-1;
+        }
+        main{
+            background-color: coral;
+            grid-column: 2/5;
+        }
+        nav{
+            background-color: royalblue;
+        }
+        aside{
+            background-color: rgb(255, 0, 0);
+        }
+        div :nth-child(4){
+            grid-column: 2/4;
+        }
+        div :nth-child(5){
+            grid-column: 4/6;
+        }
+        footer{
+            background-color: skyblue;
+            grid-column: 1/-1;
+        }   
+    </style>
+</head>
+<body>
+    <div>
+        <header>Header</header>
+        <main>Main</main>
+        <nav>Nav</nav>
+        <aside>Aside</aside>
+        <aside>Aside</aside>
+        <footer>Footer</footer>
+    </div>
+</body>
+</html>
