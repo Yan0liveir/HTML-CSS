@@ -1,0 +1,107 @@
+@charset "UTF-8";
+
+/*Todas as mídias*/
+
+/* Tipical divece brekpoins
+-------------------------
+
+Pequenas telas:até 600px;
+celular:600px até 768px;
+tablets:768px até 992px
+desktop:992px até 1200px
+telas grandes:acima de 1200 px;
+
+-------------------------
+*/
+
+
+@media print{
+    /*IMPRESSÃO*/
+    body{
+        font-family: 'Courier New', Courier, monospace;
+        text-shadow: none;
+        color: black;
+    }
+    main{
+        width: 90vw;
+        border:1px solid black;
+    }
+    main::after{
+        content: 'site feito no  www.cursoemvideo.com';
+        text-decoration: overline;
+        font-size: 0.5em;
+    }
+    #smartphone{
+        display: none;
+    }
+    #tablet{
+        display: none;
+    }
+    #impressora{
+        display: block;
+    }
+    #desktop{
+        display: none;
+    }
+    #telas-maiores{
+        display: none;
+    }
+    
+}
+
+@media screen and (min-width:768px) and (max-width:992px){
+    /*TABLET*/
+    body{
+        background: url('../imagens/back-tablet.jpg') center center no-repeat;
+        background-size: cover;
+    }
+    #smartphone{
+        display: none;
+    }
+    #tablet{
+        display: block;
+    }
+
+}
+
+@media screen and (min-width:992px) and (max-width:1600px){
+    /*DESKTOP*/
+    body{
+        background: url('../imagens/back-pc.jpg') center center no-repeat;
+        background-size: cover;
+    }
+    #smartphone{
+        display: none;
+    }
+    #tablet{
+        display: none;
+    }
+    #desktop{
+        display: block;
+    }
+
+}
+
+@media screen and (min-width:1600px) {
+    /*GRANDES TELAS*/
+    body{
+        background: url('../imagens/back-tv.jpg') center center no-repeat;
+        background-size: cover;
+    }
+    main{
+        width: 800px;
+    }
+    #smartphone{
+        display: none;
+    }
+    #tablet{
+        display: none;
+    }
+    #desktop{
+        display: none;
+    }
+    #telas-maiores{
+        display: block;
+    }
+
+}
