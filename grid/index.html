@@ -2,206 +2,133 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AluraCast</title>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw=="crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./src/assets/style/base.css">
-    <link rel="stylesheet" href="./src/assets/style/responsivo.css">
-    <link rel="stylesheet" href="src/assets/style/grid/index.css">
+    <link rel="stylesheet" href="estilos/reset.css">
+    <link rel="stylesheet" href="estilos/grid.css">
+    <link rel="stylesheet" href="estilos/style.css">
+    <title>Notícias</title>
 </head>
-
 <body>
-
-    <header class="cabecalho container">
-        <button class="cabecalho__botao"><img src="./src/assets/img/seta-voltar.svg" alt="Seta voltar"></button>
-        <button class="cabecalho__botao"><img src="./src/assets/img/seta-avançar.svg" alt="Seta avancar"></button>
-    </header>
-
-    <aside class="menu-lateral">
-        <h1 class="menu-lateral__logo"><img src="src/assets/img/alura-Cast_logo.svg" alt="Logotipo da AluraCast"></h1>
-        <nav>
-            <ul>
-                <li class="menu-lateral__link menu-lateral__link--home ativo"><a href="#">Home</a></li>
-                <li class="menu-lateral__link menu-lateral__link--busca"><a href="#">Busca</a></li>
-                <li class="menu-lateral__link menu-lateral__link--biblioteca"><a href="#">Sua Biblioteca</a></li>
+   <header>
+        <div id="superior">
+            <h1 id="superior__titulo">Notícias.com</h1>
+            <form action="#">
+                <input type="search">
+                <a href="#"><img src="imagens/button.png"></a>
+            </form>
+        </div>
+        <div id="inferior">
+            <ul id="inferior__lista">
+                <a href="#" class="lista__menu">Esportes</a></li>
+                <li><a href="#" class="lista__menu">Internacional</a></li>
+                <li><a href="#" class="lista__menu">Política</a></li>
+                <li><a href="#" class="lista__menu">Tecnologia</a></li>
+                <li><a href="#" class="lista__menu">famosos</a></li>
             </ul>
-        </nav>
-        <h3 class="menu-lateral__playlist">Playlists</h3>
-        <ul>
-            <li class="menu-lateral__link menu-lateral__link--playlist"><a>Criar Playlist</a></li>
-            <li class="menu-lateral__link menu-lateral__link--podcasts"><a></af>Podcasts salvos</a></li>
-        </ul>
-    </aside>
+        </div>
+   </header>
+   <section id="principal">
+    <!--SEÇÃO DA NOTÍCIAS-->
+        <div id="principal_noticia">
+            <h2>Brasileiro é preso nos Estados Unidos</h2>
+            <p>Brasileiro é preso nos Estados Unidos no estado do Texas apos tentar levar drogas para o Brasil</p>
+        </div>
+        <div id="noticia_2">
+            <h2 class="titulo__noticias">Novo estudo revela benefícios surpreendentes da meditação para a saúde mental</h2>
+            <p class="manchete__noticias">Mente em equilíbrio: Pesquisa científica revela como a meditação pode reduzir estresse, ansiedade e promover bem-estar emocional</p>
+        </div>
+        <div id="noticia_3">
+            <h2 class="titulo__noticias">Pesquisadores descobrem nova espécie de borboleta na Amazônia brasileira</h2>
+            <p class="manchete__noticias">Encontro surpreendente: Cientistas identificam borboleta única que desafia conceitos de biodiversidade na maior floresta tropical do mundo</p>
+        </div>
+        <div id="noticia_4">
+            <h2 class="titulo__noticias">tartup revoluciona o setor de mobilidade urbana com novo sistema de compartilhamento de bicicletas elétricas</h2>
+            <p class="manchete__noticias">Sustentabilidade sobre rodas: Startup inova com solução acessível e ecológica para deslocamentos nas cidades</p>
+        </div>
+        <div id="noticia_5">
+            <h2 class="titulo__noticias">Estudo revela aumento alarmante de casos de cyberbullying entre adolescentes</h2>
+            <p class="manchete__noticias">Ameaça invisível: Pesquisa aponta crescimento preocupante de cyberbullying e destaca a importância da conscientização e prevenção</p>
+        </div>
+        <div id="noticia_6">
+            <h2 class="titulo__noticias">Cientistas descobrem possível cura para doença degenerativa</h2>
+            <p class="manchete__noticias">Luz no fim do túnel: Pesquisadores encontram promissor tratamento que pode reverter os sintomas de doença degenerativa</p>
+        </div>
+        <div id="noticia_7">
+            <h2 class="titulo__noticias">Estudo revela os impactos da poluição plástica nos oceanos</h2>
+            <p class="manchete__noticias">Alerta ambiental: Pesquisa revela a extensão dos danos da poluição plástica nos ecossistemas marinhos</p>
+        </div>
+        <div id="noticia_8">
+            <h2 class="titulo__noticias_2">Inovação tecnológica revoluciona a indústria de energia solar</h2>
+            <p class="manchete__noticias_2">Energia do futuro: Novo avanço tecnológico promete tornar a energia solar mais acessível e eficiente</p>
+        </div>
+        <div id="noticia_9">
+            <h2 class="titulo__noticias_2">Descoberta arqueológica revela segredos fascinantes de civilização antiga</h2>
+            <p class="manchete__noticias_2">Tesouros enterrados: Escavação revela artefatos raros que desvendam mistérios de uma antiga civilização perdida</p>
+        </div>
+        <div id="noticia_11">
+            <h2 class="titulo__noticias_2">Pesquisa científica revela os benefícios da música na saúde mental</h2>
+            <p class="manchete__noticias_2">Melodia para a mente: Estudo comprova que ouvir música regularmente pode reduzir o estresse e melhorar o bem-estar emocional</p>
+        </div>
+        <div id="noticia_12">
+            <h2 class="titulo__noticias_2">Novo estudo revela os efeitos negativos do uso excessivo de redes sociais"</h2>
+            <p class="manchete__noticias_2">Conectados, mas isolados: Pesquisa aponta os impactos do uso desenfreado de redes sociais na saúde mental e nos relacionamentos pessoais</p>
+        </div>
+        <div id="noticia_13">
+            <h2 class="titulo__noticias_2">Estudo revela os benefícios da prática regular de exercícios físicos para a saúde</h2>
+            <p class="manchete__noticias_2">Atividade física: A chave para uma vida saudável! Pesquisa comprova os inúmeros benefícios do exercício regular para o corpo e mente</p>
+        </div>
+        <div id="noticia_14">
+            <h2 class="titulo__noticias_2">Pesquisadores descobrem nova terapia promissora para tratamento do câncer</h2>
+            <p class="manchete__noticias_2">Esperança no combate ao câncer: Estudo revela avanço significativo com terapia inovadora que pode revolucionar o tratamento</p>
+        </div>
+   </section>
+   <section id="section_2">
+        <div id="section_2_noticia_1" class="section2_noticia">
+            <img src="imagens/civ_amazonas.jpg" class="imagem">
+            <div>
+                <h2 class="section_2_titulo">Descoberta arqueológica revela vestígios de civilização perdida nas profundezas da floresta amazônica</h2>
+                <p class="section_2_manchete">Desvendando o passado: Expedição revela indícios fascinantes de uma antiga civilização esquecida na Amazônia</p>
+            </div>
+        </div>
+        <div id="section_2_noticia_2" class="section2_noticia">
+            <img src="imagens/energia_renovavel.jpg" class="imagem" alt="energia energia_renovavel">
+            <div>
+                <h2 class="section_2_titulo">Pesquisa aponta crescimento expressivo do mercado de energia renovável</h2>
+                <p class="section_2_manchete">Rumo à sustentabilidade: Estudo revela aumento significativo na demanda por energia renovável e impulsiona investimentos verdes</p>
+            </div>
+        </div>
+        <div id="section_2_noticia_3" class="section2_noticia">
+            <img src="imagens/aquecimento_global.jpg" class="imagem" alt="aquecimento_global">
+            <div>
+                <h2 class="section_2_titulo">Estudo revela os efeitos do aquecimento global nas geleiras do Ártico</h2>
+                <p class="section_2_manchete">Alerta no Ártico: Pesquisa mostra aceleração preocupante do derretimento das geleiras devido ao aquecimento global</p>
+            </div>
+        </div>
 
-    <main class="principal container">
-        <section class="secao secao-horizontal">
-            <h2 class="secao__titulo">Tocados recentemente</h2>
-            <ul class="secao__cartoes">
-                <li class="cartao">
-                    <img class="cartao__imagem" src="./src/assets/img/hipsters-1.svg" alt="">
-                    <h3 class="cartao__titulo">Android Jetpack</h3>
-                    <h4 class="cartao__subtitulo">Hipsters Ponto Tech</h4>
-                    <div class="cartao__player"></div>
-                    <button class="cartao__botao"><img src="./src/assets/img/botao-play.png" alt=""></button>
-                </li>
-                <li class="cartao">
-                    <img class="cartao__imagem" src="./src/assets/img/layers-1.svg" alt="">
-                    <h3 class="cartao__titulo">Tipos de Cortes</h3>
-                    <h4 class="cartao__subtitulo">Layers Ponto Tech</h4>
-                    <div class="cartao__player"></div>
-                    <button class="cartao__botao"><img src="./src/assets/img/botao-play.png" alt=""></button>
-                </li>
-                <li class="cartao">
-                    <img class="cartao__imagem" src="./src/assets/img/carreiras-1.svg" alt="">
-                    <h3 class="cartao__titulo">O fim</h3>
-                    <h4 class="cartao__subtitulo">Carreiras sem Fronteiras</h4>
-                    <div class="cartao__player"></div>
-                    <button class="cartao__botao"><img src="./src/assets/img/botao-play.png" alt=""></button>
-                </li>
-                <li class="cartao">
-                    <img class="cartao__imagem" src="./src/assets/img/scuba-1.svg" alt="">
-                    <h3 class="cartao__titulo">Da advocacia à tech</h3>
-                    <h4 class="cartao__subtitulo">Scuba Ponto Dev</h4>
-                    <div class="cartao__player"></div>
-                    <button class="cartao__botao"><img src="./src/assets/img/botao-play.png" alt=""></button>
-                </li>
-                <li class="cartao">
-                    <img class="cartao__imagem" src="./src/assets/img/boss-1.svg" alt="">
-                    <h3 class="cartao__titulo">Izabel Gallera</h3>
-                    <h4 class="cartao__subtitulo">Like a Boss</h4>
-                    <div class="cartao__player"></div>
-                    <button class="cartao__botao"><img src="./src/assets/img/botao-play.png" alt=""></button>
-                </li>
-                <li class="cartao">
-                    <img class="cartao__imagem" src="./src/assets/img/hipsters-2.svg" alt="">
-                    <h3 class="cartao__titulo">Ecossistema Crypto</h3>
-                    <h4 class="cartao__subtitulo">Hipsters Ponto Tech</h4>
-                    <div class="cartao__player"></div>
-                    <button class="cartao__botao"><img src="./src/assets/img/botao-play.png" alt=""></button>
-                </li>
-            </ul>
-        </section>
+        <!--Noticias na caixa-->
 
-        <section class="secao secao-vertical">
-            <h2 class="secao__titulo">Hipsters Ponto Tech</h2>
-            <a class="secao__link" href="#">Ver mais</a>
-            <ul class="secao__cartoes">
-                <li class="cartao">
-                    <img class="cartao__imagem" src="./src/assets/img/hipsters-3.svg" alt="">
-                    <h3 class="cartao__titulo">Github e nossas Funcionalidades Preferidas</h3>
-                    <h4 class="cartao__subtitulo">Hipsters Ponto Tech</h4>
-                </li>
-                <!--<li class="cartao">
-                    <img class="cartao__imagem" src="./src/assets/img/hipsters-4.svg" alt="">
-                    <h3 class="cartao__titulo">Android Jetpack</h3>
-                    <h4 class="cartao__subtitulo">Hipsters Ponto Tech</p>
-                </li>
-                <li class="cartao">
-                    <img class="cartao__imagem" src="./src/assets/img/hipsters-5.svg" alt="">
-                    <h3 class="cartao__titulo">Softskills em Tech</h3>
-                    <h4 class="cartao__subtitulo">Hipsters Ponto Tech</p>
-                </li>
-                <li class="cartao">
-                    <img class="cartao__imagem" src="./src/assets/img/hipsters-6.svg" alt="">
-                    <h3 class="cartao__titulo">Educação em Dados e Machine Learning</h3>
-                    <h4 class="cartao__subtitulo">Hipsters Ponto Tech</p>
-                </li>
-                <li class="cartao">
-                    <img class="cartao__imagem" src="./src/assets/img/hipsters-7.svg" alt="">
-                    <h3 class="cartao__titulo">Ecossistema Crypto</h3>
-                    <h4 class="cartao__subtitulo">Hipsters Ponto Tech</p>
-                </li>
-                <li class="cartao">
-                    <img class="cartao__imagem" src="./src/assets/img/hipsters-8.svg" alt="">
-                    <h3 class="cartao__titulo">Educação, Tecnologia e Periferia</h3>
-                    <h4 class="cartao__subtitulo">Hipsters Ponto Tech</p>
-                </li>-->
-            </ul>
-        </section>
-
-        <section class="secao secao-vertical">
-            <h2 class="secao__titulo">Indicados para você</h2>
-            <a class="secao__link" href="">Ver mais</a>
-            <ul class="secao__cartoes">
-                <li class="cartao">
-                    <img class="cartao__imagem" src="./src/assets/img/layers-2.svg" alt="">
-                    <h3 class="cartao__titulo">Montando seu estúdio</h3>
-                    <h4 class="cartao__subtitulo">Layers Ponto Tech</h4>
-                </li>
-                <!--<li class="cartao">
-                    <img class="cartao__imagem" src="./src/assets/img/scuba-2.svg" alt="">
-                    <h3 class="cartao__titulo">Voltando ao mercado após a maternidade</h3>
-                    <h4 class="cartao__subtitulo">Scuba Ponto Dev</h4>
-                </li>
-                <li class="cartao">
-                    <img class="cartao__imagem" src="./src/assets/img/scuba-3.svg" alt="">
-                    <h3 class="cartao__titulo">Reencontrando a paixão por programar</h3>
-                    <h4 class="cartao__subtitulo">Scuba Ponto Dev</h4>
-                </li>
-                <li class="cartao">
-                    <img class="cartao__imagem" src="./src/assets/img/fronteiras-1.svg" alt="">
-                    <h3 class="cartao__titulo">Suporte UX/UI</h3>
-                    <h4 class="cartao__subtitulo">Dev sem Fronteiras</h4>
-                </li>
-                <li class="cartao">
-                    <img class="cartao__imagem" src="./src/assets/img/layers-3.svg" alt="">
-                    <h3 class="cartao__titulo">Prospecção de clientes</h3>
-                    <h4 class="cartao__subtitulo">Layers Ponto Tech</h4>
-                </li>
-                <li class="cartao">
-                    <img class="cartao__imagem" src="./src/assets/img/boss-2.svg" alt="">
-                    <h3 class="cartao__titulo">Mariana Vasconcelos: CEO Agrosmart</h3>
-                    <h4 class="cartao__subtitulo">Like a Boss</h4>
-                </li>-->
-            </ul>
-        </section>
-
-        <section class="secao secao-vertical">
-            <h2 class="secao__titulo">Dev sem Fronteiras</h2>
-            <a class="secao__link" href="#">Ver mais</a>
-            <ul class="secao__cartoes">
-                <li class="secao__cartao cartao">
-                    <img class="cartao__imagem" src="./src/assets/img/fronteiras-2.svg" alt="">
-                    <h3 class="cartao__titulo">Vida e Trabalho da Costa leste</h3>
-                    <h4 class="cartao__subtitulo">Dev sem Fronteiras</h4>
-                </li>
-                <li class="secao__cartao cartao">
-                    <img class="cartao__imagem" src="./src/assets/img/fronteiras-3.svg" alt="">
-                    <h3 class="cartao__titulo">Agile Coach e Desenvolvedor</h3>
-                    <h4 class="cartao__subtitulo">Dev sem Fronteiras</h4>
-                </li>
-                <!--<li class="secao__cartao cartao">
-                    <img class="cartao__imagem" src="./src/assets/img/fronteiras-4.svg" alt="">
-                    <h3 class="cartao__titulo">Desenvolvedor</h3>
-                    <h4 class="cartao__subtitulo">Dev sem Fronteiras</h4>
-                </li>
-                <li class="secao__cartao cartao">
-                    <img class="cartao__imagem" src="./src/assets/img/fronteiras-5.svg" alt="">
-                    <h3 class="cartao__titulo">Suporte UX/UI</h3>
-                    <h4 class="cartao__subtitulo">Dev sem Fronteiras</h4>
-                </li>
-                <li class="secao__cartao cartao">
-                    <img class="cartao__imagem" src="./src/assets/img/fronteiras-6.svg" alt="">
-                    <h3 class="cartao__titulo">Engenheiro de Algoritmos</h3>
-                    <h4 class="cartao__subtitulo">Dev sem Fronteiras</h4>
-                </li>
-                <li class="secao__cartao cartao">
-                    <img class="cartao__imagem" src="./src/assets/img/fronteiras-7.svg" alt="">
-                    <h3 class="cartao__titulo">Engenheiro de Software</h3>
-                    <h4 class="cartao__subtitulo">Dev sem Fronteiras</h4>
-                </li>-->
-            </ul>
-        </section>
-    </main>
-    <div class="navbar">
-        <ul class="navbar__items">
-            <li class="navbar__item navbar__item--home">Home</li>
-            <li class="navbar__item navbar__item--busca">Busca</li>
-            <li class="navbar__item navbar__item--biblioteca">Sua Biblioteca</li>
-        </ul>
-    </div>
+        <div id="section_2_noticia_4">
+            <div id="noticia_4_1" class="caixa_noticia">
+                <hr>
+                <h2 class="noticia_4_1_titulo">Pesquisadores desenvolvem tecnologia inovadora para combater a escassez de água</h2>
+                <p class="noticia_4_1_manchete">Solução promissora: Cientistas criam sistema revolucionário que transforma água do ar em recurso potável</p> 
+            </div>
+            <div id="noticia_4_2">
+                <hr>
+                <h2 class="noticia_4_1_titulo">Estudo revela os impactos do uso excessivo de smartphones na saúde mental</h2>
+                <p class="noticia_4_1_manchete">Conectados demais? Pesquisa alerta sobre os efeitos negativos do uso excessivo de smartphones na saúde mental e propõe medidas de equilíbrio</p>
+            </div>
+            <div id="noticia_4_3">
+                <hr>
+                <h2 class="noticia_4_1_titulo">Estudo revela os benefícios da alimentação orgânica para a saúde</h2>
+                <p class="noticia_4_1_manchete">Sabor e saúde em harmonia: Pesquisa comprova os benefícios da alimentação orgânica para o bem-estar e qualidade de vida</p>
+            </div>
+            <div id="noticia_4_4">
+                <hr>
+                <h2 class="noticia_4_1_titulo">Pesquisadores descobrem nova espécie de animal marinho nas profundezas do oceano</h2>
+                <p class="noticia_4_1_manchete">Surpreendente descoberta: Expedição revela nova espécie de criatura misteriosa nas águas profundas do oceano</p>
+            </div>
+        </div>
+   </section>
 </body>
-
 </html>

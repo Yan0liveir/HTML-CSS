@@ -1,0 +1,123 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background-color: gray;
+}
+header{
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    padding: 20px 22px 1px 46px;
+}
+#superior{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    gap: 37%;
+}
+#superior__titulo{
+    font-size: 2em;
+    font-weight: bolder;
+}
+#inferior__lista{
+    display: flex;
+    justify-content: space-around;
+}
+#inferior__lista a{
+    font-variant: small-caps;
+    font-weight: bold;
+}
+.lista__menu{
+    text-decoration: none;
+    color: black;
+}
+form{
+    display: flex;
+    align-items: center;
+    gap:10px;
+}
+input{
+    border: none;
+    border-radius: 3px;
+    height: 22px;
+    background-color:black;
+}
+
+/*SEÇÃO NOTÍCIAS*/
+
+#principal_noticia h2{
+    text-align: center;
+    font-size: 2.4em;
+    padding: 17%;
+    text-shadow: 1px 1px 1px black;
+    color: white;
+}
+#principal_noticia p{
+    color: white;
+    font-weight: bold;
+    font-size: 1.1em;
+    background-color: rgba(0, 0, 0, 0);
+    text-align:left;
+    text-shadow: 1px 1px 1px black;
+    padding-left: 10%;
+}
+.titulo__noticias{
+    color: white;
+    padding: 17px;
+    font-size: 1.5em;
+    text-shadow: 1px 1px 1px black;
+}
+.manchete__noticias{
+    color: white;
+    padding: 10px;
+    text-shadow: 1px 1px 1px black;
+}
+.titulo__noticias_2{
+    color: white;
+    font-size: 1.2em;
+    text-shadow: 1px 1px 1px black;
+}
+.manchete__noticias_2{
+    color: white;
+    padding: 20px 0px 0px 3px;
+    font-size:0.9em;
+    text-shadow: 1px 1px 1px black;
+}
+
+/*SEÇÃO 2*/
+
+.section2_noticia{
+    display: flex;
+    gap: 30px;
+}
+.section_2_titulo{
+    color:black;
+    padding: 10px;
+    font-size: 1.5em;
+}
+.section_2_manchete{
+    padding: 10px;
+    color: black;
+}
+.imagem{
+    width: 30%;
+    border-radius: 5px;
+}
+
+/*NOTICIAS NA CAIXA*/
+
+#section_2_noticia_4{
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 10px;
+    border-radius: 10px;
+}
+.noticia_4_1_titulo{
+    color: black;
+    font-size: 1.2em;
+
+}
+.noticia_4_1_manchete{
+    color: rgb(94, 88, 88);
+    font-size: 1em;
+}
