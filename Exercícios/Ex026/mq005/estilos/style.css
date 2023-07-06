@@ -44,7 +44,7 @@ a:hover{
     background-color: rgba(198, 179, 179, 0.555);
 }
 main{
-    max-width: 90vw;
+    width: 90vw;
     margin: auto;
     background-color: rgb(255, 255, 255);
     padding: 10px;
